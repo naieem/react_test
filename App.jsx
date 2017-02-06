@@ -14,15 +14,19 @@ class App extends React.Component {
 			// Hello : hello
 		}
 		this.change = this.update.bind(this);
+
   }
 
   update(ev) {
   	console.log('test');
+  	this.data.name="naieem";
+  	console.log(this);
     // this.setState({ text: ev.target.value });
   }
 	render() {
 		return (
 			<div>
+			<h1>{a}</h1>
 			<h1>{this.state.header}</h1>
 			<h2>{this.state.content}</h2>
 			<p onClick={this.change}>{this.data.name}</p>
